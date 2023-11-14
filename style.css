@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.main{
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    line-height: 50px;
+
+}
+
+.modalBox{
+    position: fixed;
+    width: 400px;
+    height: 300px;
+    border: 2px black solid;
+    border-radius: 10px;
+    left: 0%;
+    right: 0%;
+    margin: auto;
+    margin-top: 15%;
+}
+
+.CloseBox{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    background-color: black;
+    color: aliceblue;
+    padding: 10px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 5px;
+}
+
+input#modal[type=checkbox]:checked~.modalBox{
+    display: none;
+}
+
